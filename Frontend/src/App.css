@@ -1,0 +1,33 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing:border-box;
+
+}
+html,
+body,
+#root{
+  height: 100%;
+  width: 100%;
+}
+main{
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+ /* background-color: brown; */
+}
+main.left,main.right{
+  height: 100%;
+  flex-basis: 50%;
+  
+}
+main.left{
+  background-color: antiquewhite ;
+}
+main.right{
+  background-color: brown;
+}
+
+
