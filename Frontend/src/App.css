@@ -1,33 +1,63 @@
-*{
+* {
   margin: 0%;
   padding: 0%;
-  box-sizing:border-box;
-
+  box-sizing: border-box;
 }
+
 html,
 body,
-#root{
+#root {
   height: 100%;
   width: 100%;
 }
-main{
+
+main {
   height: 100%;
   width: 100%;
-  padding: 1.5rem;
+  padding: 0.5rem;
   display: flex;
   gap: 1rem;
- /* background-color: brown; */
 }
-main.left,main.right{
+
+main .left,
+main .right {
   height: 100%;
   flex-basis: 50%;
-  
-}
-main.left{
-  background-color: antiquewhite ;
-}
-main.right{
-  background-color: brown;
+  border-radius: 0.7rem;
 }
 
+main .left {
+  background-color: #000000;
+  position: relative;
+}
 
+.left .code,
+.code pre ,
+.code pre code {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: #000000;
+}
+main .right{
+  background-color: rgb(129, 129, 129);
+}
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgb(204, 210, 216);
+  color: #000000;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.7rem;
+}
+main .right{
+  background-color: #343434;
+  padding: 1rem 2rem ;
+  font-size: 1.2rem;
+  overflow: auto;
+}
